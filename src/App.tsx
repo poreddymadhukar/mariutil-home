@@ -1,5 +1,6 @@
 import {
   ArrowUpRight,
+  Binary,
   Braces,
   CodeXml,
   KeyRound,
@@ -38,20 +39,27 @@ const tools: Tool[] = [
     accent: "teal",
   },
   {
-    name: "Screen Recorder",
-    description:
-      "Record your screen online without installing software. Record directly in your browser.",
-    href: "https://screen.mariutil.com/",
-    icon: MonitorUp,
-    accent: "coral",
-  },
-  {
     name: "JWT Debugger",
     description:
       "Decode, inspect, and debug JSON Web Tokens directly in your browser.",
     href: "https://jwt.mariutil.com/",
     icon: KeyRound,
     accent: "teal",
+  },
+  {
+    name: "JSON ↔ Base64",
+    description: "Convert JSON to and from Base64 directly in your browser.",
+    href: "https://jsonbase64.mariutil.com/",
+    icon: Binary,
+    accent: "blue",
+  },
+  {
+    name: "Screen Recorder",
+    description:
+      "Record your screen online without installing software. Record directly in your browser.",
+    href: "https://screen.mariutil.com/",
+    icon: MonitorUp,
+    accent: "coral",
   },
 ];
 
