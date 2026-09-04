@@ -1,18 +1,15 @@
-import { useState } from "react";
 import {
   ArrowUpRight,
   Braces,
   CodeXml,
-  GitFork,
-  Menu,
   MonitorUp,
   ShieldCheck,
   Sparkles,
-  X,
   Zap,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
-import Feedback from "./components/Feedback";
+import SiteFooter from "./components/SiteFooter";
+import SiteHeader from "./components/SiteHeader";
 
 type Tool = {
   name: string;
@@ -50,54 +47,9 @@ const tools: Tool[] = [
 ];
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const closeMenu = () => setMenuOpen(false);
-
   return (
     <div className="site-shell">
-      <header className="site-header">
-        <nav className="nav-wrap" aria-label="Main navigation">
-          <a className="brand" href="/" aria-label="Mariutil home">
-            <span className="brand-mark" aria-hidden="true">
-              m
-            </span>
-            <span>Mariutil</span>
-          </a>
-
-          <button
-            className="menu-toggle"
-            type="button"
-            aria-label={
-              menuOpen ? "Close navigation menu" : "Open navigation menu"
-            }
-            aria-expanded={menuOpen}
-            onClick={() => setMenuOpen((open) => !open)}
-          >
-            {menuOpen ? <X size={21} /> : <Menu size={21} />}
-          </button>
-
-          <div className={`nav-links ${menuOpen ? "is-open" : ""}`}>
-            <a href="#tools" onClick={closeMenu}>
-              Tools
-            </a>
-            <a href="#about" onClick={closeMenu}>
-              About
-            </a>
-            <a href="#blog" onClick={closeMenu}>
-              Blog
-            </a>
-            <a
-              className="github-link"
-              href="https://github.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <GitFork size={17} aria-hidden="true" /> GitHub
-            </a>
-          </div>
-        </nav>
-      </header>
+      <SiteHeader />
 
       <main>
         <section className="intro" aria-labelledby="page-title">
@@ -205,24 +157,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="site-footer">
-        <div className="footer-brand">
-          <span className="brand-mark" aria-hidden="true">
-            m
-          </span>
-          <span>Mariutil</span>
-        </div>
-        <p>Simple tools. Less friction.</p>
-        <div className="footer-links" aria-label="Footer navigation">
-          <a href="#about">About</a>
-          <a href="#blog">Blog</a>
-          <a href="#privacy">Privacy</a>
-          <a href="#terms">Terms</a>
-          <a href="mailto:hello@mariutil.com">Contact</a>
-          <Feedback />
-        </div>
-        <small>Copyright {new Date().getFullYear()} Mariutil.</small>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

@@ -11,6 +11,12 @@ This project is the Mariutil tools directory. It is deployed independently from 
 | `https://json.mariutil.com/`     | JSON Formatter                | `json-formatter`         |
 | `https://xml2json.mariutil.com/` | XML to JSON                   | `xml-json-formatter`     |
 
+## Reusable site shell
+
+The shared React shell is in `src/components/SiteHeader.tsx` and `src/components/SiteFooter.tsx`. Use these components, `Feedback.tsx`, and their existing CSS rules in each tool project to preserve a consistent Mariutil experience.
+
+The header and footer use absolute `https://mariutil.com/` links, so they return visitors to the directory when rendered on any tool subdomain. Each tool project must set its own `VITE_FEEDBACK_API_URL` build variable for the feedback modal.
+
 ## Deploy the homepage
 
 Build and publish the static site:
