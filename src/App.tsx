@@ -2,6 +2,7 @@ import {
   ArrowUpRight,
   Braces,
   CodeXml,
+  KeyRound,
   MonitorUp,
   ShieldCheck,
   Sparkles,
@@ -43,6 +44,14 @@ const tools: Tool[] = [
     href: "https://screen.mariutil.com/",
     icon: MonitorUp,
     accent: "coral",
+  },
+  {
+    name: "JWT Debugger",
+    description:
+      "Decode, inspect, and debug JSON Web Tokens directly in your browser.",
+    href: "https://jwt.mariutil.com/",
+    icon: KeyRound,
+    accent: "teal",
   },
 ];
 
