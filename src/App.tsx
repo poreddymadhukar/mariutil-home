@@ -5,6 +5,7 @@ import {
   CodeXml,
   KeyRound,
   MonitorUp,
+  QrCode,
   ShieldCheck,
   Sparkles,
   Zap,
@@ -68,6 +69,13 @@ const tools: Tool[] = [
     href: "https://screen.mariutil.com/",
     icon: MonitorUp,
     accent: "coral",
+  },
+  {
+    name: "QR Code Generator",
+    description: "Create QR codes online for links, text, and more.",
+    href: "https://qr.mariutil.com/",
+    icon: QrCode,
+    accent: "teal",
   },
 ];
 
