@@ -3,6 +3,7 @@ import {
   Binary,
   Braces,
   CodeXml,
+  FileText,
   KeyRound,
   MonitorUp,
   QrCode,
@@ -76,6 +77,14 @@ const tools: Tool[] = [
     href: "https://qr.mariutil.com/",
     icon: QrCode,
     accent: "teal",
+  },
+  {
+    name: "PDF Merge",
+    description:
+      "Combine multiple PDF files into one document in your browser without uploading anything.",
+    href: "https://pdfmerge.mariutil.com/",
+    icon: FileText,
+    accent: "purple",
   },
 ];
 
