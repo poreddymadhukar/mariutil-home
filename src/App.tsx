@@ -3,6 +3,7 @@ import {
   Binary,
   Braces,
   CodeXml,
+  FileImage,
   FileText,
   KeyRound,
   MonitorUp,
@@ -94,6 +95,14 @@ const tools: Tool[] = [
     icon: FileText,
     accent: "teal",
   },
+  {
+    name: "JPG-PDF",
+    description:
+      "Convert JPG images into PDF files quickly and privately in your browser.",
+    href: "https://jpgtopdf.mariutil.com/",
+    icon: FileImage,
+    accent: "purple",
+  },
 ];
 
 function App() {
@@ -110,9 +119,9 @@ function App() {
             Free online tools for developers and everyday work.
           </h1>
           <p className="intro-copy">
-            Format JSON, merge and split PDFs, convert XML to JSON, record your
-            screen, and use more lightweight browser-based utilities. No signup
-            required.
+            Format JSON, merge and split PDFs, convert JPG to PDF, convert XML
+            to JSON, record your screen, and use more lightweight browser-based
+            utilities. No signup required.
           </p>
           <a className="browse-link" href="#tools">
             Explore tools <ArrowUpRight size={17} aria-hidden="true" />
