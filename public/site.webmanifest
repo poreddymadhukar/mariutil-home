@@ -1,0 +1,12 @@
+{
+  "name": "Mariutil",
+  "short_name": "Mariutil",
+  "description": "Free browser-based tools for developers and everyday work, including PDF Merge and PDF Split.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#f8fafc",
+  "lang": "en-US",
+  "categories": ["productivity", "utilities", "developer tools"]
+}

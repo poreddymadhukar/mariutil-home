@@ -8,10 +8,22 @@
       name="description"
       content="Free online tools for developers and everyday work, including JSON formatting, PDF merging, XML to JSON conversion, and screen recording. No signup required."
     />
+    <meta name="application-name" content="Mariutil" />
+    <meta name="author" content="Mariutil" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Mariutil" />
     <link rel="canonical" href="https://mariutil.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://mariutil.com/" />
     <meta property="og:site_name" content="Mariutil" />
+    <link rel="alternate" hreflang="en" href="https://mariutil.com/" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta
       property="og:title"
       content="Mariutil | Free Online Tools for Developers"
@@ -21,6 +33,7 @@
       content="Use Mariutil for free online tools including JSON formatting, PDF merging, XML to JSON conversion, and screen recording. No signup required."
     />
     <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://mariutil.com/" />
     <meta
       name="twitter:title"
       content="Mariutil | Free Online Tools for Developers"
@@ -33,10 +46,31 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Mariutil",
-        "url": "https://mariutil.com/",
-        "description": "Free online tools for developers and everyday work, including JSON formatting, PDF merging, XML to JSON conversion, and screen recording."
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://mariutil.com/#organization",
+            "name": "Mariutil",
+            "url": "https://mariutil.com/"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mariutil.com/#website",
+            "name": "Mariutil",
+            "url": "https://mariutil.com/",
+            "description": "Free online tools for developers and everyday work, including JSON formatting, PDF merging, PDF splitting, XML to JSON conversion, and screen recording.",
+            "publisher": { "@id": "https://mariutil.com/#organization" },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://mariutil.com/#webpage",
+            "url": "https://mariutil.com/",
+            "name": "Mariutil | Free Online Tools for Developers",
+            "isPartOf": { "@id": "https://mariutil.com/#website" },
+            "inLanguage": "en-US"
+          }
+        ]
       }
     </script>
     <script type="application/ld+json">
@@ -105,6 +139,16 @@
               "description": "Create QR codes online for links, text, and more."
             }
           }
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "item": {
+                "@type": "WebApplication",
+                "name": "PDF Split",
+                "url": "https://pdfsplit.mariutil.com/",
+                "description": "Extract pages from a PDF or split every page into separate files directly in your browser."
+              }
+            }
         ]
       }
     </script>

@@ -86,6 +86,14 @@ const tools: Tool[] = [
     icon: FileText,
     accent: "purple",
   },
+  {
+    name: "PDF Split",
+    description:
+      "Extract pages from a PDF or split every page into separate files directly in your browser.",
+    href: "https://pdfsplit.mariutil.com/",
+    icon: FileText,
+    accent: "teal",
+  },
 ];
 
 function App() {
@@ -102,8 +110,9 @@ function App() {
             Free online tools for developers and everyday work.
           </h1>
           <p className="intro-copy">
-            Format JSON, convert XML to JSON, record your screen, and use more
-            lightweight browser-based utilities. No signup required.
+            Format JSON, merge and split PDFs, convert XML to JSON, record your
+            screen, and use more lightweight browser-based utilities. No signup
+            required.
           </p>
           <a className="browse-link" href="#tools">
             Explore tools <ArrowUpRight size={17} aria-hidden="true" />
@@ -178,8 +187,10 @@ function App() {
           <h2 id="about-title">Useful utilities, without the busywork.</h2>
           <p>
             We build focused browser tools that respect your time and privacy.
-            No account walls, no software to manage, just dependable help when
-            you need it.
+            Use PDF Merge to combine documents or PDF Split to extract selected
+            pages and create separate files, all directly in your browser. No
+            account walls, no software to manage, just dependable help when you
+            need it.
           </p>
         </section>
 
