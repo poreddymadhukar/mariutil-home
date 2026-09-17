@@ -103,6 +103,22 @@ const tools: Tool[] = [
     icon: FileImage,
     accent: "purple",
   },
+  {
+    name: "PDF to JPG",
+    description:
+      "Convert PDF pages into high-quality JPG images directly in your browser with instant downloads.",
+    href: "https://pdftojpg.mariutil.com",
+    icon: FileImage,
+    accent: "orange",
+  },
+  {
+    name: "PDF to Text",
+    description:
+      "Extract text from PDF files directly in your browser with fast, private processing.",
+    href: "https://pdftotext.mariutil.com/",
+    icon: FileText,
+    accent: "purple",
+  },
 ];
 
 function App() {
@@ -119,9 +135,9 @@ function App() {
             Free online tools for developers and everyday work.
           </h1>
           <p className="intro-copy">
-            Format JSON, merge and split PDFs, convert JPG to PDF, convert XML
-            to JSON, record your screen, and use more lightweight browser-based
-            utilities. No signup required.
+            Format JSON, merge and split PDFs, convert PDF to JPG, convert JPG
+            to PDF, convert XML to JSON, record your screen, and use more
+            lightweight browser-based utilities. No signup required.
           </p>
           <a className="browse-link" href="#tools">
             Explore tools <ArrowUpRight size={17} aria-hidden="true" />
