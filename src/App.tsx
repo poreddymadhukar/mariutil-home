@@ -8,6 +8,7 @@ import {
   KeyRound,
   MonitorUp,
   QrCode,
+  ScanLine,
   ShieldCheck,
   Sparkles,
   Zap,
@@ -78,6 +79,14 @@ const tools: Tool[] = [
     href: "https://qr.mariutil.com/",
     icon: QrCode,
     accent: "teal",
+  },
+  {
+    name: "Mariutil Scanner",
+    description:
+      "Scan QR codes, barcodes, and text privately with your camera or images.",
+    href: "https://scanner.mariutil.com/",
+    icon: ScanLine,
+    accent: "coral",
   },
   {
     name: "PDF Merge",
