@@ -121,6 +121,14 @@ const tools: Tool[] = [
     accent: "orange",
   },
   {
+    name: "PDF to CSV/Excel",
+    description:
+      "Extract table data from PDF files and convert it into CSV or Excel format quickly in your browser.",
+    href: "https://pdftocsv.mariutil.com",
+    icon: FileText,
+    accent: "teal",
+  },
+  {
     name: "PDF to Text",
     description:
       "Extract text from PDF files directly in your browser with fast, private processing.",
@@ -144,9 +152,10 @@ function App() {
             Free online tools for developers and everyday work.
           </h1>
           <p className="intro-copy">
-            Format JSON, merge and split PDFs, convert PDF to JPG, convert JPG
-            to PDF, convert XML to JSON, record your screen, and use more
-            lightweight browser-based utilities. No signup required.
+            Format JSON, merge and split PDFs, convert PDF to CSV/Excel, convert
+            PDF to JPG, convert JPG to PDF, convert XML to JSON, record your
+            screen, and use more lightweight browser-based utilities. No signup
+            required.
           </p>
           <a className="browse-link" href="#tools">
             Explore tools <ArrowUpRight size={17} aria-hidden="true" />
