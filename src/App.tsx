@@ -66,6 +66,14 @@ const tools: Tool[] = [
     accent: "blue",
   },
   {
+    name: "Base64 Encoder & Decoder",
+    description:
+      "Encode and decode Base64 text securely and instantly. 100% client-side.",
+    href: "https://base64.mariutil.com/",
+    icon: Binary,
+    accent: "blue",
+  },
+  {
     name: "Screen Recorder",
     description:
       "Record your screen online without installing software. Record directly in your browser.",
