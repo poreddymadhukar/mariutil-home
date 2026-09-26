@@ -74,6 +74,14 @@ const tools: Tool[] = [
     accent: "blue",
   },
   {
+    name: "Word & Character Counter",
+    description:
+      "Count words, characters, sentences, paragraphs, and reading time privately in your browser.",
+    href: "https://wordcounter.mariutil.com/",
+    icon: FileText,
+    accent: "teal",
+  },
+  {
     name: "Screen Recorder",
     description:
       "Record your screen online without installing software. Record directly in your browser.",
@@ -171,7 +179,9 @@ function App() {
             Format JSON, merge and split PDFs, convert Word to PDF, convert PDF
             to CSV/Excel, convert PDF to JPG, convert JPG to PDF, convert XML to
             JSON, record your screen, and use more lightweight browser-based
-            utilities. No signup required.
+            utilities. No signup required. Explore the Word &amp; Character
+            Counter for word and character counts, or use the Base64 Encoder
+            &amp; Decoder to encode and decode text privately in your browser.
           </p>
           <a className="browse-link" href="#tools">
             Explore tools <ArrowUpRight size={17} aria-hidden="true" />
@@ -251,6 +261,20 @@ function App() {
             account walls, no software to manage, just dependable help when you
             need it.
           </p>
+          <div className="about-tool-copy">
+            <p>
+              The Word &amp; Character Counter is a free online word counter for
+              counting words online, characters, sentences, paragraphs, lines,
+              and reading time. It handles Unicode text, multilingual writing,
+              and emojis directly in your browser without uploading your text.
+            </p>
+            <p>
+              Base64 Encoder &amp; Decoder helps you encode text to Base64 and
+              decode Base64 back to readable text quickly and privately. It is
+              useful for developers working with data formats, tokens, and
+              browser-based testing, with all processing kept client-side.
+            </p>
+          </div>
         </section>
 
         <section
