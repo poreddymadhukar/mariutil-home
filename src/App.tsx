@@ -160,6 +160,14 @@ const tools: Tool[] = [
     icon: FileText,
     accent: "purple",
   },
+  {
+    name: "Password Generator",
+    description:
+      "Create strong, secure random passwords online with customizable length and character options.",
+    href: "https://password.mariutil.com/",
+    icon: ShieldCheck,
+    accent: "teal",
+  },
 ];
 
 function App() {
@@ -182,6 +190,8 @@ function App() {
             utilities. No signup required. Explore the Word &amp; Character
             Counter for word and character counts, or use the Base64 Encoder
             &amp; Decoder to encode and decode text privately in your browser.
+            You can also use the Password Generator to create strong, secure
+            random passwords privately in your browser.
           </p>
           <a className="browse-link" href="#tools">
             Explore tools <ArrowUpRight size={17} aria-hidden="true" />
@@ -273,6 +283,12 @@ function App() {
               decode Base64 back to readable text quickly and privately. It is
               useful for developers working with data formats, tokens, and
               browser-based testing, with all processing kept client-side.
+            </p>
+            <p>
+              Password Generator creates strong random passwords online with
+              customizable length, uppercase and lowercase letters, numbers,
+              symbols, and a password strength meter. Passwords are generated
+              securely in your browser and are never uploaded or stored.
             </p>
           </div>
         </section>

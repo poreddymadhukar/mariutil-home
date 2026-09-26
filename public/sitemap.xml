@@ -3,4 +3,49 @@
   <url>
     <loc>https://mariutil.com/</loc>
   </url>
+  <url>
+    <loc>https://password.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://json.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://mockjson.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://xml2json.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://screen.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://pdfmerge.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://qr.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://pdfsplit.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://jpgtopdf.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://pdftojpg.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://pdftocsv.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://wordtopdf.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://pdftotext.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://base64.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://wordcounter.mariutil.com/</loc>
+  </url>
 </urlset>
