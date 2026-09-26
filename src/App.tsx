@@ -5,7 +5,6 @@ import {
   CodeXml,
   FileImage,
   FileText,
-  Hash,
   KeyRound,
   MonitorUp,
   QrCode,
@@ -73,22 +72,6 @@ const tools: Tool[] = [
     href: "https://base64.mariutil.com/",
     icon: Binary,
     accent: "blue",
-  },
-  {
-    name: "Hash Generator",
-    description:
-      "Generate MD5, SHA-1, SHA-256, and SHA-512 hashes privately in your browser.",
-    href: "https://hash.mariutil.com/",
-    icon: Hash,
-    accent: "teal",
-  },
-  {
-    name: "Password Generator",
-    description:
-      "Create strong, secure random passwords online with customizable length and character options.",
-    href: "https://password.mariutil.com/",
-    icon: ShieldCheck,
-    accent: "teal",
   },
   {
     name: "Word & Character Counter",
@@ -178,6 +161,14 @@ const tools: Tool[] = [
     accent: "purple",
   },
   {
+    name: "Password Generator",
+    description:
+      "Create strong, secure random passwords online with customizable length and character options.",
+    href: "https://password.mariutil.com/",
+    icon: ShieldCheck,
+    accent: "teal",
+  },
+  {
     name: "Image Compressor",
     description:
       "Compress, resize, and convert JPG, PNG, and WebP images privately in your browser.",
@@ -210,9 +201,7 @@ function App() {
             You can also use the Password Generator to create strong, secure
             random passwords privately in your browser. The Image Compressor can
             compress, resize, and convert JPG, PNG, and WebP images privately in
-            your browser. The Hash Generator creates MD5, SHA-1, SHA-256, and
-            SHA-512 hashes directly in your browser without uploading text or
-            files.
+            your browser.
           </p>
           <a className="browse-link" href="#tools">
             Explore tools <ArrowUpRight size={17} aria-hidden="true" />
@@ -315,12 +304,6 @@ function App() {
               Image Compressor helps reduce image file sizes, resize dimensions,
               and convert JPG, PNG, and WebP images directly in your browser.
               Images stay private and are not uploaded to a server.
-            </p>
-            <p>
-              Hash Generator creates MD5, SHA-1, SHA-256, and SHA-512 hashes for
-              text and files directly in your browser. It supports Unicode text,
-              file verification, hash comparison, and private client-side
-              processing.
             </p>
           </div>
         </section>
