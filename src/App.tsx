@@ -168,6 +168,14 @@ const tools: Tool[] = [
     icon: ShieldCheck,
     accent: "teal",
   },
+  {
+    name: "Image Compressor",
+    description:
+      "Compress, resize, and convert JPG, PNG, and WebP images privately in your browser.",
+    href: "https://imagecompressor.mariutil.com/",
+    icon: FileImage,
+    accent: "coral",
+  },
 ];
 
 function App() {
@@ -191,7 +199,9 @@ function App() {
             Counter for word and character counts, or use the Base64 Encoder
             &amp; Decoder to encode and decode text privately in your browser.
             You can also use the Password Generator to create strong, secure
-            random passwords privately in your browser.
+            random passwords privately in your browser. The Image Compressor can
+            compress, resize, and convert JPG, PNG, and WebP images privately in
+            your browser.
           </p>
           <a className="browse-link" href="#tools">
             Explore tools <ArrowUpRight size={17} aria-hidden="true" />
@@ -289,6 +299,11 @@ function App() {
               customizable length, uppercase and lowercase letters, numbers,
               symbols, and a password strength meter. Passwords are generated
               securely in your browser and are never uploaded or stored.
+            </p>
+            <p>
+              Image Compressor helps reduce image file sizes, resize dimensions,
+              and convert JPG, PNG, and WebP images directly in your browser.
+              Images stay private and are not uploaded to a server.
             </p>
           </div>
         </section>
