@@ -383,6 +383,37 @@ function App() {
             <a href="mailto:hello@mariutil.com">hello@mariutil.com</a>.
           </p>
         </section>
+
+        <section
+          className="about-section"
+          id="terms"
+          aria-labelledby="terms-title"
+        >
+          <p className="section-label">Terms of Use</p>
+          <h2 id="terms-title">Use Mariutil responsibly.</h2>
+          <p>
+            Mariutil provides browser-based utilities for general informational
+            and productivity purposes. You are responsible for reviewing the
+            results and deciding whether a tool is suitable for your use case.
+          </p>
+          <p>
+            Do not use Mariutil to process content you do not have permission
+            to use, or to break the law, harm others, distribute malware, or
+            abuse any service. Tools may change, be updated, or become
+            temporarily unavailable without notice.
+          </p>
+          <p>
+            Mariutil is provided on an “as is” and “as available” basis. To the
+            extent permitted by law, Mariutil is not responsible for losses
+            resulting from your use of the tools or reliance on their output.
+            For privacy information, see our <a href="#privacy">Privacy</a>{" "}
+            section.
+          </p>
+          <p>
+            Questions about these terms can be sent to{" "}
+            <a href="mailto:hello@mariutil.com">hello@mariutil.com</a>.
+          </p>
+        </section>
       </main>
 
       <SiteFooter />
