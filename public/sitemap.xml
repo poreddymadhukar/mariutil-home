@@ -57,4 +57,16 @@
   <url>
     <loc>https://hash.mariutil.com/</loc>
   </url>
+  <url>
+    <loc>https://jwt.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://jsonbase64.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://scanner.mariutil.com/</loc>
+  </url>
+  <url>
+    <loc>https://tempmail.mariutil.com/</loc>
+  </url>
 </urlset>

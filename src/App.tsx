@@ -209,18 +209,9 @@ function App() {
             Free online tools for developers and everyday work.
           </h1>
           <p className="intro-copy">
-            Format JSON, merge and split PDFs, convert Word to PDF, convert PDF
-            to CSV/Excel, convert PDF to JPG, convert JPG to PDF, convert XML to
-            JSON, record your screen, and use more lightweight browser-based
-            utilities. No signup required. Explore the Word &amp; Character
-            Counter for word and character counts, or use the Base64 Encoder
-            &amp; Decoder to encode and decode text privately in your browser.
-            You can also use the Password Generator to create strong, secure
-            random passwords privately in your browser. The Image Compressor can
-            compress, resize, and convert JPG, PNG, and WebP images privately in
-            your browser. Use the PDF to Base64 and Base64 to PDF converter to
-            encode PDF files to Base64 or decode Base64 back to PDF without
-            uploading anything.
+            Free browser-based tools for formatting JSON, working with PDFs,
+            converting files, recording your screen, and more. No signup
+            required, and your data stays private in your browser.
           </p>
           <a className="browse-link" href="#tools">
             Explore tools <ArrowUpRight size={17} aria-hidden="true" />
