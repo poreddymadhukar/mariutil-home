@@ -161,6 +161,14 @@ const tools: Tool[] = [
     accent: "purple",
   },
   {
+    name: "PDF ⇄ Base64",
+    description:
+      "Encode PDF files to Base64 or decode Base64 back to PDF directly in your browser. No uploads.",
+    href: "https://pdfbase64.mariutil.com/",
+    icon: Binary,
+    accent: "orange",
+  },
+  {
     name: "Password Generator",
     description:
       "Create strong, secure random passwords online with customizable length and character options.",
@@ -201,7 +209,9 @@ function App() {
             You can also use the Password Generator to create strong, secure
             random passwords privately in your browser. The Image Compressor can
             compress, resize, and convert JPG, PNG, and WebP images privately in
-            your browser.
+            your browser. Use the PDF to Base64 and Base64 to PDF converter to
+            encode PDF files to Base64 or decode Base64 back to PDF without
+            uploading anything.
           </p>
           <a className="browse-link" href="#tools">
             Explore tools <ArrowUpRight size={17} aria-hidden="true" />
@@ -304,6 +314,13 @@ function App() {
               Image Compressor helps reduce image file sizes, resize dimensions,
               and convert JPG, PNG, and WebP images directly in your browser.
               Images stay private and are not uploaded to a server.
+            </p>
+            <p>
+              PDF to Base64 &amp; Base64 to PDF Converter encodes PDF files to
+              Base64 text and decodes Base64 strings (including data URIs) back
+              into downloadable PDFs. It is useful for API requests, JSON
+              payloads, and testing, and everything runs client-side so your
+              documents are never uploaded.
             </p>
           </div>
         </section>
