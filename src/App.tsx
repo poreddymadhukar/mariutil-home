@@ -5,6 +5,7 @@ import {
   CodeXml,
   FileImage,
   FileText,
+  Hash,
   KeyRound,
   MonitorUp,
   QrCode,
@@ -175,6 +176,14 @@ const tools: Tool[] = [
     href: "https://password.mariutil.com/",
     icon: ShieldCheck,
     accent: "teal",
+  },
+  {
+    name: "Hash Generator",
+    description:
+      "Generate secure hashes (MD5, SHA-1, SHA-256, SHA-512) instantly. Fully private—everything runs in your browser.",
+    href: "https://hash.mariutil.com/",
+    icon: Hash,
+    accent: "blue",
   },
   {
     name: "Image Compressor",
