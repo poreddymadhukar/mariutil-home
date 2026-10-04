@@ -14,6 +14,7 @@ import {
   Sparkles,
   Zap,
 } from "lucide-react";
+import { useEffect } from "react";
 import type { LucideIcon } from "lucide-react";
 import SiteFooter from "./components/SiteFooter";
 import SiteHeader from "./components/SiteHeader";
@@ -196,6 +197,19 @@ const tools: Tool[] = [
 ];
 
 function App() {
+  useEffect(() => {
+    if (!window.location.hash) return;
+
+    const frame = window.requestAnimationFrame(() => {
+      const target = document.getElementById(
+        decodeURIComponent(window.location.hash.slice(1)),
+      );
+      target?.scrollIntoView({ block: "start", behavior: "smooth" });
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, []);
+
   return (
     <div className="site-shell">
       <SiteHeader />
