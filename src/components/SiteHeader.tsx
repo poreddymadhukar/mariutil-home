@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GitFork, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const mariutilUrl = "https://mariutil.com/";
 
@@ -37,13 +37,11 @@ export default function SiteHeader() {
           <a href={`${mariutilUrl}#blog`} onClick={closeMenu}>
             Blog
           </a>
-          <a
-            className="github-link"
-            href="https://github.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GitFork size={17} aria-hidden="true" /> GitHub
+          <a href={`${mariutilUrl}#privacy`} onClick={closeMenu}>
+            Privacy
+          </a>
+          <a href="mailto:hello@mariutil.com" onClick={closeMenu}>
+            Contact
           </a>
         </div>
       </nav>

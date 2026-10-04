@@ -341,11 +341,55 @@ function App() {
         >
           <div>
             <p className="section-label">Notes &amp; updates</p>
-            <h2 id="blog-title">Useful reading is on the way.</h2>
+            <h2 id="blog-title">Practical notes for everyday workflows.</h2>
           </div>
+          <div className="blog-posts">
+            <article>
+              <h3>Why browser-first tools help protect your data</h3>
+              <p>
+                Learn how local processing can keep text, documents, and images
+                on your device while you work with everyday utilities.
+              </p>
+            </article>
+            <article>
+              <h3>Useful JSON workflows for developers</h3>
+              <p>
+                A practical guide to formatting, validating, and creating mock
+                JSON data before it reaches your application.
+              </p>
+            </article>
+            <article>
+              <h3>Choosing the right PDF conversion tool</h3>
+              <p>
+                Understand when to merge, split, convert, extract text, or
+                encode a PDF to Base64 for a smoother document workflow.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section
+          className="about-section"
+          id="privacy"
+          aria-labelledby="privacy-title"
+        >
+          <p className="section-label">Privacy</p>
+          <h2 id="privacy-title">Your data stays in your browser.</h2>
           <p>
-            We are collecting practical notes on browser privacy, focused
-            workflows, and the small details that make everyday tools better.
+            Mariutil tools are designed to process your content locally in your
+            browser. We do not require an account, and files or text processed
+            by the tools are not uploaded to Mariutil servers.
+          </p>
+          <p>
+            We may use privacy-friendly analytics or advertising services in
+            the future to understand site usage and support the service. Those
+            providers may use cookies or similar technologies according to
+            their own policies. We will update this policy before introducing
+            those services.
+          </p>
+          <p>
+            For privacy questions, contact us at{" "}
+            <a href="mailto:hello@mariutil.com">hello@mariutil.com</a>.
           </p>
         </section>
       </main>
