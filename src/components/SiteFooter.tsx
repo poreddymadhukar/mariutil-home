@@ -15,6 +15,7 @@ export default function SiteFooter() {
       <div className="footer-links" aria-label="Footer navigation">
         <a href={`${mariutilUrl}#about`}>About</a>
         <a href={`${mariutilUrl}#blog`}>Blog</a>
+        <a href={`${mariutilUrl}#faq`}>FAQ</a>
         <a href={`${mariutilUrl}#privacy`}>Privacy</a>
         <a href={`${mariutilUrl}#terms`}>Terms</a>
         <a href="mailto:hello@mariutil.com">Contact</a>

@@ -7,6 +7,7 @@ import {
   FileText,
   Hash,
   KeyRound,
+  Mail,
   MonitorUp,
   QrCode,
   ScanLine,
@@ -14,7 +15,7 @@ import {
   Sparkles,
   Zap,
 } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { LucideIcon } from "lucide-react";
 import SiteFooter from "./components/SiteFooter";
 import SiteHeader from "./components/SiteHeader";
@@ -194,9 +195,29 @@ const tools: Tool[] = [
     icon: FileImage,
     accent: "coral",
   },
+  {
+    name: "Temporary Email",
+    description:
+      "Create temporary email addresses to receive messages while protecting your personal inbox.",
+    href: "https://tempmail.mariutil.com/",
+    icon: Mail,
+    accent: "coral",
+  },
 ];
 
 function App() {
+  const [toolFilter, setToolFilter] = useState("");
+
+  const filteredTools = useMemo(() => {
+    const normalizedFilter = toolFilter.trim().toLowerCase();
+
+    if (!normalizedFilter) return tools;
+
+    return tools.filter(({ name, description }) =>
+      `${name} ${description}`.toLowerCase().includes(normalizedFilter),
+    );
+  }, [toolFilter]);
+
   useEffect(() => {
     if (!window.location.hash) return;
 
@@ -240,9 +261,19 @@ function App() {
           <div className="section-heading">
             <p className="section-label">Toolbox</p>
             <h2 id="tools-title">Get straight to the useful part.</h2>
+            <label className="tool-filter">
+              <span>Find a tool</span>
+              <input
+                type="search"
+                value={toolFilter}
+                onChange={(event) => setToolFilter(event.target.value)}
+                placeholder="Search tools..."
+                aria-controls="tool-grid"
+              />
+            </label>
           </div>
-          <div className="tool-grid">
-            {tools.map(({ name, description, href, icon: Icon, accent }) => (
+          <div className="tool-grid" id="tool-grid">
+            {filteredTools.map(({ name, description, href, icon: Icon, accent }) => (
               <a
                 className="tool-card"
                 href={href}
@@ -261,6 +292,37 @@ function App() {
                 </span>
               </a>
             ))}
+          </div>
+          {filteredTools.length === 0 && (
+            <p className="tool-filter-empty" role="status">
+              No tools match “{toolFilter}”. Try another word.
+            </p>
+          )}
+        </section>
+
+        <section className="faq-section" id="faq" aria-labelledby="faq-title">
+          <p className="section-label">FAQ</p>
+          <h2 id="faq-title">Find the right tool faster.</h2>
+          <div className="faq-list">
+            <details>
+              <summary>How does “Find a tool” work?</summary>
+              <p>
+                Enter any word or phrase in the search box to filter the cards.
+                Mariutil checks both the tool name and its description, and the
+                results update as you type. Clear the box to show all tools
+                again.
+              </p>
+            </details>
+            <details>
+              <summary>What is Temporary Email used for?</summary>
+              <p>
+                Temporary Email gives you a disposable email address for
+                receiving messages without exposing your personal inbox. It is
+                an online service with a server-managed inbox, so avoid using
+                it for sensitive accounts or important long-term
+                communication.
+              </p>
+            </details>
           </div>
         </section>
 
