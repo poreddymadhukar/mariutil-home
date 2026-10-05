@@ -211,6 +211,14 @@ const tools: Tool[] = [
     icon: ShieldCheck,
     accent: "teal",
   },
+  {
+    name: "Unlock PDF",
+    description:
+      "Unlock password-protected PDF files online when you have permission to access them.",
+    href: "https://unlockpdf.mariutil.com/",
+    icon: KeyRound,
+    accent: "blue",
+  },
 ];
 
 function App() {
