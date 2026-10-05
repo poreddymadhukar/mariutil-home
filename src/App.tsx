@@ -203,6 +203,14 @@ const tools: Tool[] = [
     icon: Mail,
     accent: "coral",
   },
+  {
+    name: "PDF Protect",
+    description:
+      "Protect PDF files with a password and secure access controls online.",
+    href: "https://protectpdf.mariutil.com/",
+    icon: ShieldCheck,
+    accent: "teal",
+  },
 ];
 
 function App() {
