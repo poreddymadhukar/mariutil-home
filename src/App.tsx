@@ -226,6 +226,13 @@ const tools: Tool[] = [
     icon: KeyRound,
     accent: "blue",
   },
+  {
+    name: "Regex Tester & Generator",
+    description: "Test and generate regular expressions online.",
+    href: "https://regex.mariutil.com/",
+    icon: CodeXml,
+    accent: "teal",
+  },
 ];
 
 function App() {
