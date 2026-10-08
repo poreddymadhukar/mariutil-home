@@ -38,6 +38,13 @@ const tools: Tool[] = [
     accent: "blue",
   },
   {
+    name: "JSON Viewer",
+    description: "Visualize JSON data into interactive graphs.",
+    href: "https://jsonview.mariutil.com/",
+    icon: Braces,
+    accent: "blue",
+  },
+  {
     name: "JSON Mock Data Generator",
     description:
       "Generate realistic mock JSON data online for development and testing.",
